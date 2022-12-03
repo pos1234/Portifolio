@@ -3,7 +3,6 @@ let ilight=document.getElementById('ilight');
 let root=document.querySelector(':root');
 let mybutton=document.getElementById('backtop');
 let navbar=document.getElementById('navbar');
-let homepic=document.getElementById('home-picture');
 let all=document.getElementById('all');
 let concept=document.getElementById('concept');
 let wire=document.getElementById('wire');
@@ -91,7 +90,6 @@ light.addEventListener('click',()=>{
     root.style.setProperty('--second','#404041');
     root.style.setProperty('--text','#edeef2');
     root.style.setProperty('--main',"#ffd841");
-    homepic.setAttribute('src','assets/images/my-pic.png');
     ilight.classList.remove('fa-sun');
     light.classList.add('dark-animation');
     ilight.classList.add('fa-moon');
@@ -102,7 +100,6 @@ light.addEventListener('click',()=>{
     root.style.setProperty('--second','#e5e2db')
     root.style.setProperty('--text','#111');
     root.style.setProperty('--main','#ff9a0d');
-    homepic.setAttribute('src','assets/images/my-pic2.png');
     ilight.classList.remove('fa-moon');
     light.classList.add('dark-animation');
     ilight.classList.add('fa-sun');
