@@ -15,6 +15,10 @@ let program=document.getElementById('program');
 let lang=document.getElementById('lang');
 let micro=document.getElementById('micro');
 let navbarToggler=document.getElementById('navbar-toggler');
+let first_image = $('#first-image');
+let second_image = $('#second-image');
+let third_image = $('#third-image');
+let fourth_image = $('#fourth-image');
 navbarToggler.addEventListener('click',()=>{
     navbarToggler.classList.toggle('toggler-icon-ex');
 })
@@ -62,7 +66,6 @@ concept.addEventListener('click',()=>{
     port.classList.remove('wireframe');
     port.classList.remove('front-end');
     port.classList.add('concept');
-    
 });
 wire.addEventListener('click',()=>{
     wire.classList.add('active');
