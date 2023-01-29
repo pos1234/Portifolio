@@ -256,45 +256,19 @@ color: var(--main);
     background-color: var(--primary);
     color:var(--text);
 }
-.port .por-link-con{
-    background-color:var(--primary);
-    padding:1.5rem;
-    padding-left:32%;
-}
-.port .por-links{
-    background-color:none;
-    color:var(--text);
-    text-decoration: none;
-    font-size: 120%;
-    padding-right: 2rem;
-    cursor: pointer;
-}
-.por-links:hover{
-    color:var(--main);
-    cursor: pointer;
-}
-.por-link-con .active{
-    text-decoration:2px underline;
-    text-decoration-color:var(--main);
-    color: var(--main);
-}
+
 .non-active{
     display: none;
-}
-
-.por-link-content{
-    padding:1rem;
-    padding-left:28%;
-    padding-right:32%;
 }
 .all{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding:0 10% 0 20%;
-    grid-gap:0.3rem;
-    background-color: var(--primary);
+    padding:5% 10% 0;
+    grid-gap:1rem;
+    background-color:var(--primary);
     transition: all 0.5s;
+    justify-content: center;
 }
 .card-image-first,
 .card-image-second,
@@ -309,9 +283,6 @@ color: var(--main);
 .card-image-first{
     background-image:url('./images/concept-design-one1.jpg');
 }
-.card-image-second{
-    background-image:url('./images/web-template-one2.png');
-}
 .card-image-third{
     background:url('./images/wireframe-two1.jpg');
 }
@@ -321,10 +292,11 @@ color: var(--main);
 .card-image-fifth{
     background:url('./images/wireframe-three1.jpg');
 }
-.all a{
-    grid-row:span 2;
-    height:405px;
-    background:url('./images/web-template-one2.png') no-repeat;
+.all .por-second{
+    grid-row:span 2;   
+    background:url('./images/web-template-one2.png');
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .wireframe,
 .front-end,
@@ -366,6 +338,7 @@ color: var(--main);
     text-decoration: none;
     font-size: 120%;
     padding-right: 5rem;
+    cursor: pointer;
 }
 .ski .por-links:hover{
     color: var(--main);
@@ -551,10 +524,6 @@ color: var(--main);
         padding:0;
     }
     /* portfolio */
-    .port .por-links{
-        font-size:99%;
-        padding-right:20px;
-    }
     .all{
         width:99%;
     }
@@ -612,10 +581,13 @@ color: var(--main);
     }
     .all{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows:unset;
-        padding:5%;
-        grid-gap: 0.2rem;
+        padding:0 8%;
+        grid-gap: 1rem;
+    }
+    .all a{
+        grid-row: unset;
     }
     /* .all > div:nth-child(2){
         grid-column: span 2;
@@ -625,7 +597,7 @@ color: var(--main);
     .concept{
         display: grid;
         grid-template-columns:1fr;
-        padding:0 10%;
+        padding:0 8%;
         row-gap:1rem;
     }
     /* skills */

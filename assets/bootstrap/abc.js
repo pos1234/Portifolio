@@ -3,10 +3,6 @@ let ilight=document.getElementById('ilight');
 let root=document.querySelector(':root');
 let mybutton=document.getElementById('backtop');
 let navbar=document.getElementById('navbar');
-let all=document.getElementById('all');
-let concept=document.getElementById('concept');
-let wire=document.getElementById('wire');
-let front=document.getElementById('front');
 let port=document.getElementById('port');
 let pro=document.getElementById('pro');
 let lan=document.getElementById('lan');
@@ -45,47 +41,6 @@ mic.addEventListener('click',()=>{
     program.classList.add('not-active');
     lang.classList.add('not-active');
     micro.classList.remove('not-active');
-});
-all.addEventListener('click',()=>{
-    all.classList.add('active');
-    concept.classList.remove('active');
-    wire.classList.remove('active');
-    front.classList.remove('active');
-    port.classList.remove('concept');
-    port.classList.remove('wireframe');
-    port.classList.remove('front-end');
-    port.classList.add('all');
-    
-});
-concept.addEventListener('click',()=>{
-    concept.classList.add('active');
-    all.classList.remove('active');
-    wire.classList.remove('active');
-    front.classList.remove('active');
-    port.classList.remove('all');
-    port.classList.remove('wireframe');
-    port.classList.remove('front-end');
-    port.classList.add('concept');
-});
-wire.addEventListener('click',()=>{
-    wire.classList.add('active');
-    all.classList.remove('active');
-    concept.classList.remove('active');
-    front.classList.remove('active');
-    port.classList.remove('all');
-    port.classList.remove('concept');
-    port.classList.remove('front-end');
-    port.classList.add('wireframe');
-});
-front.addEventListener('click',()=>{
-    front.classList.add('active');
-    all.classList.remove('active');
-    wire.classList.remove('active');
-    concept.classList.remove('active');
-    port.classList.remove('all');
-    port.classList.remove('wireframe');
-    port.classList.remove('concept');
-    port.classList.add('front-end');
 });
 light.addEventListener('click',()=>{
     if(root.style.getPropertyValue('--primary')=='#f6f6f6'){
