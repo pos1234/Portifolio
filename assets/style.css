@@ -279,24 +279,24 @@ color: var(--main);
     height:200px;
     display:block;
     background-size:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card-image-first{
-    background-image:url('./images/concept-design-one1.jpg');
+    background-image:url('./images/ArcBack.PNG');
 }
 .card-image-third{
-    background:url('./images/wireframe-two1.jpg');
+    background-image:url('./images/Event.PNG');
 }
 .card-image-fourth{
-    background:url('./images/wireframe-four1.jpg');
+    background-image:url('./images/concept-design-one1.jpg');
 }
 .card-image-fifth{
-    background:url('./images/wireframe-three1.jpg');
+    background-image:url('./images/wireframe-three1.jpg');
 }
 .all .por-second{
     grid-row:span 2;   
-    background:url('./images/web-template-one2.png');
-    background-repeat: no-repeat;
-    background-size:cover;
+    background-image:url('./images/web-template-one2.png');
 }
 .wireframe,
 .front-end,
@@ -526,6 +526,9 @@ color: var(--main);
     /* portfolio */
     .all{
         width:99%;
+    }
+    .all > a div {
+        height:250px;
     }
     /* skills */
     .ski .por-link-con{
